@@ -21,7 +21,7 @@
     "format:check": "prettier-check \"src/**/*.ts\""
   },
   "dependencies": {
-    "loudness": "^0.3.0"
+    "loudness": "git://github.com/dubo-dubon-duponey/node-loudness.git"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",

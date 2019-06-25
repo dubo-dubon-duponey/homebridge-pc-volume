@@ -39,6 +39,9 @@ class ComputerSpeakers implements Accessory {
     const services = config.services || [ConfigService.Lightbulb]
     const logarithmic = config.logarithmic || false
 
+    // Register the mixer name if any is declared
+    !config.device || loudness.setDefaultDevice(config.device)
+
     if (services.indexOf(ConfigService.Speaker) > -1) {
       log.debug("Creating speaker service")
 
