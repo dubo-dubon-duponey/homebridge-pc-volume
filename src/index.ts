@@ -41,6 +41,7 @@ class ComputerSpeakers implements Accessory {
 
     // Register the mixer name if any is declared
     !config.device || loudness.setDefaultDevice(config.device)
+    !config.card || loudness.setCard(config.card)
 
     if (services.indexOf(ConfigService.Speaker) > -1) {
       log.debug("Creating speaker service")
