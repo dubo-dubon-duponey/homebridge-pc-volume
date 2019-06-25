@@ -3,7 +3,7 @@ export interface Config {
   services?: Service[]
   logarithmic?: boolean
   device?: string
-  card?: string
+  card?: number
 }
 
 export enum Service {
